@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Ref</th>
+        <th scope="col">Date</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{order.reference}}</td>
+        <td>{{order.date}}</td>
+        <td><button (click)="editOrder(order)"></button></td>
+      </tr>
+    </tbody>
+  </table>

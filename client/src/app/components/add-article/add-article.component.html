@@ -1,0 +1,26 @@
+<h1 mat-dialog-title style="text-align: center;">add new article</h1>
+<form action="" method="POST" role="form" >
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>Article name</mat-label>
+        <input required matInput placeholder="Article name" ngModel name="name" [(ngModel)]="article.name">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>price</mat-label>
+        <input required matInput placeholder="price" ngModel name="price" [(ngModel)]="article.price">
+    </mat-form-field>
+</p>
+
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>picture</mat-label>
+        <input required matInput type="file" placeholder="picture" ngModel name="picture" [(ngModel)]="article.picture">
+    </mat-form-field>
+</p>
+
+
+<button [disabled]="" class="btn btn-primary" (click)="addArticle()">add</button>
+</form>
+
